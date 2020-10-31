@@ -1,0 +1,6 @@
+ipc-orchid ipc-orchid/accept_eula boolean true
+ipc-orchid ipc-orchid/accept_eula2 boolean true
+ipc-orchid ipc-orchid/webserver_port string 80
+ipc-orchid ipc-orchid/admin_password string password123
+ipc-orchid ipc-orchid/orchives_dir string /orchives
+ipc-orchid ipc-orchid/autodiscovery_ip_address string 127.0.0.1
