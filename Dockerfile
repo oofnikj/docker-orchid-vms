@@ -6,7 +6,8 @@ RUN apt-get update
 RUN ORCHID_INSTALL_IGNORE_INIT=1 DEBIAN_FRONTEND=noninteractive \
     apt-get install -y /inst/ipc-orchid-x86_64*.deb || true
 RUN rm -fr /inst
-EXPOSE 80
+EXPOSE 8080
+EXPOSE 5554
 VOLUME /orchives
 VOLUME /var/lib/orchid_server
 ENV GST_PLUGIN_SCANNER=/opt/orchid/libexec/gstreamer-1.0
