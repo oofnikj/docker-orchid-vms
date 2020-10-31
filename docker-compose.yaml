@@ -2,12 +2,12 @@ version: '3'
 services:
   orchid-vms:
     container_name: orchid-vms
-    build:
-      context: .
+    image: 'orchid-vms:2.14.0'
     ports:
       - '8080:8080'
       - '5554:5554'
     volumes:
+      - '/etc/localtime:/etc/localtime:ro'
       - './orchives:/orchives'
       - './orchid_server:/var/lib/orchid_server'
       - './etc/opt:/etc/opt'
