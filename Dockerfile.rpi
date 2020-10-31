@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:18.04
 ARG VERSION
 WORKDIR /inst
 COPY preseeds.txt .
@@ -8,7 +8,7 @@ RUN wget --no-check-certificate https://download.ipconfigure.com/orchid/ipc-orch
 RUN ORCHID_INSTALL_IGNORE_INIT=1 DEBIAN_FRONTEND=noninteractive \
     apt-get install -y /inst/ipc-orchid-*.deb || true
 
-FROM ubuntu:focal
+FROM ubuntu:18.04
 COPY --from=0 --chown=1000:1000 /opt/orchid /opt/orchid
 EXPOSE 8080
 EXPOSE 5554
