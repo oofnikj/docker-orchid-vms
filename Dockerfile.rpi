@@ -4,7 +4,7 @@ WORKDIR /inst
 COPY preseeds.txt .
 RUN debconf-set-selections /inst/preseeds.txt
 RUN apt-get update && apt-get install -y wget
-RUN wget https://download.ipconfigure.com/orchid/ipc-orchid-x86_64_${VERSION}-sysvinit.deb
+RUN wget --no-check-certificate https://download.ipconfigure.com/orchid/ipc-orchid-armv7l_${VERSION}.deb
 RUN ORCHID_INSTALL_IGNORE_INIT=1 DEBIAN_FRONTEND=noninteractive \
     apt-get install -y /inst/ipc-orchid-*.deb || true
 
