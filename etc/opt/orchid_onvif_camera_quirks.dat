@@ -1,0 +1,80 @@
+{
+    "SpecialCases": [
+        {
+            "Regex": {
+                "Manufacturer": "(?i)Bosch"
+            },
+            "Options": {
+                "nat-method": "0",
+                "short-header": "true"
+            }
+        },
+        {
+            "Regex": {
+                "Manufacturer": "(?i)Brickcom"
+            },
+            "Options": {
+                "set-PT0S": "true"
+            }
+        },
+        {
+            "Regex": {
+                "Manufacturer": "(?i)Panasonic"
+            },
+            "Options": {
+                "short-header": "true"
+            }
+        },
+        {
+            "Regex": {
+                "Model": "AXIS M3007"
+            },
+            "Options": {
+                "fix-all-profiles": "true"
+            }
+        },
+        {
+            "Regex": {
+                "Model": "AXIS M501(3|4)"
+            },
+            "Options": {
+                "force-relative-ptz": "true"
+            }
+        },
+        {
+            "Regex": {
+                "Model": "AXIS Q370(8|9).*"
+            },
+            "Options": {
+                "pan-tilt-override": "false",
+                "zoom-override": "false"
+            }
+        },
+        {
+            "Regex": {
+                "Model": "AXIS Q1765.*"
+            },
+            "Options": {
+                "pan-tilt-override": "false"
+            }
+        },
+        {
+            "Regex": {
+                "Manufacturer": "Sony",
+                "Model": "SNC-VB600"
+            },
+            "Options": {
+                "pan-tilt-override": "false"
+            }
+        },
+        {
+            "Regex": {
+                "Manufacturer": "Canon",
+                "Model": "VB-H43"
+            },
+            "Options": {
+                "short-header": "true"
+            }
+        }
+    ]
+}
