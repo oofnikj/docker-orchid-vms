@@ -1,5 +1,7 @@
 # Orchid VMS in Docker
 
+Build and run [Orchid Core VMS](https://www.ipconfigure.com/products/orchid) in Docker.
+
 Build for `armv7l` (Raspberry Pi 32-bit):
 
     $ export VERSION=2.14.0
