@@ -11,3 +11,4 @@ services:
       - './orchives:/orchives'
       - './orchid_server:/var/lib/orchid_server'
       - './etc/opt:/etc/opt'
+    restart: on-failure
